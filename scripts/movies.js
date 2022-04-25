@@ -14,7 +14,7 @@ async function Searchmovies(){
     try{
         const search=document.getElementById("search").value;
       // const search="avenger"
-        const res=await fetch(`http://www.omdbapi.com/?s=${search}&apikey=39e83ad3`);
+        const res=await fetch(`https://www.omdbapi.com/?s=${search}&apikey=39e83ad3`);
          const data=await res.json();
          console.log(data.Search)
        // const movi=data.search();
